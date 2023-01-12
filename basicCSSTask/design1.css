@@ -1,0 +1,28 @@
+body{
+    text-align: center;
+}
+header{
+    height: 150px;
+    background-color: rgb(242, 71, 162);
+    margin-bottom: 16px;
+}
+.sec{
+    display: inline-flex;
+    width: 100%;
+}
+.div1{
+    background-color: rgb(235, 69, 125);
+    margin-right: 16px;
+    height: 400px;
+    width: 70%;
+}
+.div2{
+    background-color: rgb(213, 48, 103);
+    height: 400px;
+    width: 30%;
+}
+footer{
+    height: 150px;
+    margin-top: 16px;
+    background-color: rgb(133, 49, 85);
+}

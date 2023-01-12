@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-in">
+<head>
+    <title>jqueryDesign2</title>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".head1").click(function(){
+               $(`
+               <div style="padding: 100px;background-color:skyblue; font-size:30px;">
+                <p>Hello World!!!</p>
+                </div>
+               `).appendTo("section");
+            })
+        });
+    </script>
+    <style>
+        body{
+            font-family: Arial;
+            font-size: 18px;
+            text-align:center;
+        }
+        .head1{
+            padding: 10px;
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Click on header section then slide will be open...</h1>
+    </header>
+    <section>
+        <div class="head1">
+            Click me to slide down panel
+        </div>
+    </section>
+</body>
+</html>

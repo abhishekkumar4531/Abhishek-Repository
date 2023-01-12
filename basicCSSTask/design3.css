@@ -1,0 +1,47 @@
+body{
+    background-color: rgb(226, 33, 33);
+    font-family: Arial;
+    color: white;
+}
+.div1{
+    height: 380px;
+    display: inline-flex;
+    align-items: center;
+    margin-left: 100px;
+}
+.div11, .div22{
+    width: 50%;
+}
+.div22{
+    text-align: center;
+}
+.div11 p{
+    text-align: justify;
+}
+.head{
+    font-size: 50px;
+}
+.body{
+    margin-top: 20px;
+    font-size: 20px;
+}
+.div2{
+    display: inline-flex;
+}
+.p1, .p2, .p3{
+    background-color: rgb(120, 16, 16);
+    width: 33%;
+}
+.p1, .p2{
+    margin-right: 10px;
+}
+
+.div2 p{
+    color: yellow;
+    margin-top: 70px;
+    text-align: justify;
+   font-size: 17px;
+}
+.p11{
+    padding: 30px;
+}

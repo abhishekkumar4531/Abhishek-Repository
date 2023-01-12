@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-in">
+<head>
+    <title>jqueryDesign4</title>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("header").click(function(){
+                $("header").css("background-color","blue");
+            });
+            $("#div1").click(function(){
+                $("#div1").text("Leftbar");
+            });
+            $("#div3").click(function(){
+                $("#div3").html(`
+                <div style="background-color:rgb(212, 212, 63); padding-bottom:10px;height: 90px;">
+                </div>
+                `);
+                $("#div3").css("background-color","rgb(212, 212, 63)");
+                $("#div2").css("margin-bottom","0px");
+            });
+            $("footer").click(function(){
+                alert("Clicked...");
+            });
+        });
+    </script>
+    <style>
+        body{
+        margin: 10px;
+        text-align: center;
+        font-size: 25px;
+        font-family: Arial;
+        color: white;
+        }
+        header{
+            background-color: skyblue;
+            height: 145px;
+            padding-top: 10px;
+        }
+        section{
+            display: grid;
+            grid-template-columns: 4fr 8fr;
+            height: 400px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        footer{
+            background-color: rgb(224, 178, 28);
+            padding-top: 10px;
+            height: 140px;
+        }
+        #div1{
+            background-color: rgb(80, 198, 80);
+            padding-top: 10px;
+            margin-right: 15px;
+        }
+        #div2{
+            background-color: rgb(212, 212, 63);
+            height: 280px;
+            padding-top: 10px;
+            margin-bottom: 10px;
+        }
+        #div3{
+            background-color: gray;
+            padding-top: 10px;
+            height: 90px;
+        }
+    </style>
+</head>
+<body class="popop">
+    <header>
+        Header
+    </header>
+    <section>
+        <div id="div1">
+           Sidebar
+        </div>
+        <div>
+            <div id="div2">Main Content</div>
+            <div id="div3">Extra Content</div>
+        </div>
+    </section>
+    <footer>
+        Footer
+    </footer>
+</body>
+</html>

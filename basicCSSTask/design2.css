@@ -1,0 +1,45 @@
+body{
+    text-align: center;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+header{
+    background-color: skyblue;
+    height: 145px;
+    padding-top: 10px;
+}
+section{
+    height: 400px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: inline-flex;
+    width: 100%;
+}
+.div1{
+    height: 390px;
+    width: 25%;
+    margin-right: 10px;
+    padding-top: 10px;
+    background-color: green;
+}
+.div2{
+    height: 390px;
+    width: 75%;
+}
+.div3{
+    height: 290px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    background-color: rgb(210, 210, 33);
+}
+.div4{
+    height: 80px;
+    padding-top: 10px;
+    background-color: rgb(136, 133, 133);
+}
+footer{
+    background-color: rgb(224, 178, 28);
+    padding-top: 10px;
+    height: 140px;
+}

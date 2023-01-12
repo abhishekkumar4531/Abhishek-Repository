@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>jqueryDesign3</title>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".btn").click(function(){
+                var val1 = $("#fname").val();
+                var val2 = $("#lname").val();
+                if(val1=="" && val2==""){
+                    alert("Please fill all the text boxes...");
+                }else if(val1==""){
+                    alert("Please enter FirstName text box...");
+                }else if(val2==""){
+                    alert("Please enter LastName text box...");
+                }else{
+                    alert("Congratulations...your form submitted successfully");
+                    alert(val1+" "+val2+" welcome back!!!");
+                }
+            })
+        });
+    </script>
+    <style>
+        body{
+            font-size: 16px;
+            font-family: Arial;
+        }
+        input{
+            padding: 5px;
+            padding-right: 20px;
+        }
+        button{
+            padding: 5px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HTML Form with validations...</h1>
+    </header>
+    <section>
+        <form>
+            <label for="fname">Enter First Name</label><br>
+            <input type="text" name="fname" id="fname" placeholder="abc@123"><br><br>
+            <label for="lname">Enter Last Name</label><br>
+            <input type="text" name="lname" id="lname" placeholder="abc123"><br><br>
+
+            <button class="btn">Submit</button>
+        </form>
+    </section>
+</body>
+</html>

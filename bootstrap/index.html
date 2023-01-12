@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap-Example</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <script>
+        function click1(){
+            document.getElementById("al").innerHTML=`<div class="alert alert-danger alert-dismissible w-25">
+            <button class="btn btn-close" data-bs-dismiss="alert"></button>
+            <strong>Are you sure!</strong> You wanna delete!!!
+        </div>`;
+        }
+        function click2(){
+            document.getElementById("al").innerHTML=`<div class="alert alert-success alert-dismissible w-25">
+            <button class="btn btn-close" data-bs-dismiss="alert"></button>
+            <strong>Are you sure!</strong> You wanna save!!!
+        </div>`;
+        }
+    </script>
+</head>
+<body class="container-fluid">
+    <h1 class="bg-primary text-center">Heading level1</h1>
+
+    <div class="p-5">
+        <h2>Dropdown Concept</h2>
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Show Item</button>
+            <ul class="dropdown-menu">
+                <li class="dropdown-item">Dropdown Item-1</li>
+                <li class="dropdown-item">Dropdown Item-2</li>
+                <li class="dropdown-item">Dropdown Item-3</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="p-5">
+        <button class="btn btn-danger" onclick="click1()">Delete</button>
+        <button class="btn btn-success" onclick="click2()">Save</button>
+    </div>
+
+    <div id="al">
+        
+    </div>
+
+    <div>
+        <form action="GET" class="w-25 mt-5">
+            <h6 class="text-center">"form-floating" concept</h6>
+            <div class="form-floating">
+                <input type="text" id="email" name="email" class="form-control" placeholder="Enter email">
+                <label for="email">Email</label>
+            </div>
+        </form>
+    </div>
+
+    <div>
+        <form action="GET" class="was-validated w-25 mt-5">
+            <h6 class="text-center">"form-floating" and "form-validation" concept</h6>
+            <div class="form-floating">
+                <input type="text" class="form-control" id="email" name="email" required>
+                <label for="email" class="form-lable">Email</label>
+                <div class="valid-feedback">valid</div>
+                <div class="invalid-feedback">invalid</div>
+            </div>
+        </form>
+    </div>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+</body>
+</html>
